@@ -1,32 +1,49 @@
 @font-face{
-	font-family: 'helveticaroman';
-	src: url(/fonts/helvetica-roman.otf);
+	font-family: 'STHeiti';
+	src: url(/fonts/STHeiti-TC-Medium.ttf);
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face{
-	font-family: 'helveticalight';
-	src: url(/fonts/helvetica-light.ttf);
+	font-family: 'Aller regular';
+	src: url(/fonts/Aller_Rg.ttf);
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face{
-	font-family: 'helveticamedium';
-	src: url(/fonts/helvetica-medium.otf);
+	font-family: 'Aller light';
+	src: url(/fonts/Aller_Lt.ttf);
 	font-weight: normal;
 	font-style: normal;
 }
 
-@mixin helvetic($style : roman){
-	@if $style == roman{
-		font-family: helveticaroman;
-	}
-	@if $style == medium{
-		font-family: helveticamedium;
+@font-face{
+	font-family: 'Aller bold';
+	src: url(/fonts/Aller_Bd.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'Aller italik';
+	src: url(/fonts/Aller_It.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin aller($style : regular){
+	@if $style == regular{
+		font-family: 'Aller regular';
 	}
 	@if $style == light{
-		font-family: helveticalight;
+		font-family: 'Aller light';
+	}
+	@if $style == bold{
+		font-family: 'Aller bold';
+	}
+	@if $style == italic{
+		font-family: 'Aller italik';
 	}
 }

@@ -1,0 +1,43 @@
+.top
+	height: 460px
+	background: #f0efea
+	background: url(../img/top/top-bg.png) 
+	background-position: bottom;
+	.container
+		height: 100%
+		position: relative
+
+.top__wrap
+	height: 100%
+	background: url(../img/top/top-big.png) center no-repeat
+
+.top__detals
+	width: 50%
+	position: absolute
+	right: 0
+	top: 70px
+	@include aller(light)
+	color: #242424
+	.top__detals-title
+		font-size: 40px
+		margin: 16px 0 12px 0 
+		.category
+			// margin-bottom: 7px
+	.top__detals-desc
+		font-size: 20px
+		max-height: 70px
+		overflow: hidden;
+
+.price-block
+	width: 68px
+	height: 67px
+	@include aller(bold)
+	color: #fff
+	background-color: $color1
+	position: relative
+	.price
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+

@@ -1,0 +1,50 @@
+.nav
+	background: #fff
+	.container
+		@include clearfix
+.nav__list
+	padding: 0
+	margin: 0
+	float: left
+
+.nav__item
+	display: inline-block
+	font-size: 16px
+	border-right: 1px solid #eeeeee
+	&:first-child
+		border-left: 1px solid #eeeeee
+
+	.nav__link
+		display: inline-block
+		color: #242424
+		padding: 23px
+
+		&:first-letter
+			text-transform: uppercase
+
+.info-wrap
+	float: right
+
+.info__item, .info__item-link, .info__icon, .info__count
+	display: inline-block
+
+.info__item
+	border-right: 1px solid #cccccc
+	&:first-child
+		border-left: 1px solid #cccccc
+
+
+.info__item-link
+	padding: 20px
+
+.info__icon
+	vertical-align: middle
+	margin-right: 3px
+.info__count
+	@include aller(bold)
+	color: #fff
+	background: #adadad
+	padding: 6px 5px
+	border-radius: 5px
+	&.chart
+		background: $color1

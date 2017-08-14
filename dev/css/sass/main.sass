@@ -1,1 +1,31 @@
-@import "_misc/_normalize";
+@import "_misc/_normalize"
+@import "_misc/_fonts.scss"
+@import "_misc/_var.sass"
+@import "_misc/_mixins.scss"
+
+body
+	background: #ebe7df
+	width: 100%
+	height: 100%
+	font-size: 12px
+	// line-height: 1.42;
+	font-family: 'Aller regular'
+
+.container
+	max-width: 942px
+	margin: 0 auto
+
+a
+	text-decoration: none
+
+p
+	margin: 0
+
+@import "_section/_header.sass"
+
+@import "_section/_nav.sass"
+
+@import "_section/_top.sass"
+
+
+// @include aller(italic)
