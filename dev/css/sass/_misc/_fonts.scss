@@ -1,0 +1,32 @@
+@font-face{
+	font-family: 'helveticaroman';
+	src: url(/fonts/helvetica-roman.otf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'helveticalight';
+	src: url(/fonts/helvetica-light.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'helveticamedium';
+	src: url(/fonts/helvetica-medium.otf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin helvetic($style : roman){
+	@if $style == roman{
+		font-family: helveticaroman;
+	}
+	@if $style == medium{
+		font-family: helveticamedium;
+	}
+	@if $style == light{
+		font-family: helveticalight;
+	}
+}
